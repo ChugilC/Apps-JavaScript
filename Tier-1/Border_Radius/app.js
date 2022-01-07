@@ -1,11 +1,11 @@
-const btn = document.querySelector(".btn");
+const input = document.querySelector(".inp");
 
-function calcRad() {
-  // Element values
-  const toL = +document.querySelector(".tl").value;
-  const toR = +document.querySelector(".tr").value;
-  const boL = +document.querySelector(".bl").value;
-  const boR = +document.querySelector(".br").value;
+function updateRad() {
+  const suf = this.dataset.sizing || "";
+  document.documentElement.style.setProperty(
+    `--${this.name}`,
+    this.value + suf
+  );
 }
 
-btn.addEventListener("click", calcRad);
+input.addEventListener("change", updateRad);

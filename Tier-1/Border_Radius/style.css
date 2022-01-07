@@ -1,8 +1,5 @@
 :root {
-  --topL: 0px;
-  --topR: 0px;
-  --botL: 0px;
-  --botR: 0px;
+  --rad: 0px;
 }
 
 .container {
@@ -14,7 +11,7 @@
   width: 300px;
   height: 200px;
   background: #1abc9c;
-  border-radius: var(--topL) var(--topR) var(--botR) var(--botL);
+  border-radius: var(--rad);
 }
 
 h1 {
@@ -33,18 +30,4 @@ h1 {
 
 .values input {
   padding: 10px;
-}
-
-.wrapper {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-button {
-  background-color: #2874a6;
-  color: #fff;
-  height: 30px;
-  width: 80px;
-  border: 1px solid black;
-  cursor: pointer;
 }
